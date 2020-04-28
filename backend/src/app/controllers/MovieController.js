@@ -3,7 +3,7 @@ import api from '../../services/api';
 class MovieController {
   async index(req, res) {
     try {
-      const response = await api.get('/filmes');
+      const response = await api.get('/');
 
       return res.json(response.data);
     } catch (err) {
